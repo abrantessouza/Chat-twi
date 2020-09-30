@@ -45,7 +45,7 @@ function buttonClick(){
 
 function enviarDados(input){
   localizacao.update({
-    dados: firebase.firestore.FieldValue.arrayUnion(`${nome}: ${input}`)
+    dados: firebase.firestore.FieldValue.arrayUnion(`${nome}: ${escapeHtml(input)}`)
   })
 }
 
@@ -69,4 +69,13 @@ localizacao.onSnapshot(function(dados){
   }
   
 })
+
+function escapeHtml(unsafe) {
+    return unsafe
+         .replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#039;");
+ }
 
