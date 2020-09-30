@@ -3,12 +3,12 @@ body {
 }
 
 .fundoTextoPost{
-  margin: 14px 0px 0px 5px;
+  margin: 50px 5px 0px 5px;
   background: #121C25;
-  box-shadow: 0px 0px 500px #010101;
+  box-shadow: 0px 0px 500px #000000CF;
   
-  width: fit-content;
-  height: fit-content;
+  
+  
   
   border: solid 1px #6C6C6C;
   padding: 30px 20px 10px 40px;
@@ -19,8 +19,8 @@ body {
   color: #FFFFFF;
   margin: 0px;
   font-family: sans-serif;
-  font-size: 40px;
-  font-weight: 300
+  font-size: 37px;
+  font-weight: 300;
 }
 
 .fundoButtonInput{
@@ -38,7 +38,7 @@ body {
   font-size: 40px;
   font-weight: 300;
   width: 70%;
-  height: 100px;
+  height: 250px;
 }
 #button1{
   background: #121C25;
